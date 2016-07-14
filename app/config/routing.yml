@@ -1,0 +1,13 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+api:
+    resource: "@AppBundle/Api/"
+    type:     annotation
+    
+product_preview:
+    path:      product/preview
+    defaults: {_controller: AppBundle:Product:preview, product: 'default'}
+    requirements:
+        _method:  POST

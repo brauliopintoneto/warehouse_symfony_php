@@ -1,0 +1,44 @@
+{# app/Resources/views/list/list_product_warehouse.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<h1>Transportar Pallet</h1>
+    <form>
+    	<fieldset>
+    		<!-- add the combobox here -->
+    		<label>
+    			C&oacute;digo do Pallet<br>
+				<input 
+					type="text" 
+					id="pallet_orig" 
+					name="pallet_orig" 
+					placeholder="C&oacute;digo do Pallet"/>
+			</label>    		    		
+    	</fieldset>
+    	    	
+    	<!-- TODO: Adicionar lista de masters a serem transferidos -->
+    	
+    	<input 
+			type="button" 
+			id="transfer_master_add" 
+			name="TransferMasterAdd"
+			value="Transferir"/><p>
+			
+		<!-- TODO: Exibir lista de masters a serem transferidos -->
+    	:::::TODO::::::<p>
+    	<input 
+			type="submit" 
+			id="cancel_transfer" 
+			name="CancelTransfer"
+			value="Cancelar"/>
+    		
+		<input 
+			type="submit" 
+			id="save_transfer" 
+			name="SaveTransfer"
+			value="Salvar"/>
+			
+    </form>	
+    
+{% endblock %}
